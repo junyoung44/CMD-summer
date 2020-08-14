@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+    <head>          
+        <title>회원 가입</title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+          
+        <style>
+            body{
+                margin : 2%;
+                background-color: #AED6F6;
+                
+                font-family: 'Nanum Gothic', sans-serif;
+                color :#202020;
+            }
+            #register{
+                
+                background-color :azure;
+                margin-top:6rem;
+                margin:0 auto;
+                border: 1rem solid #CDD7DE;
+                padding : 2rem;
+                width : 20rem;
+                text-align: left;
+                margin-top:3rem;
+            }
+            #submit{
+                background-color:#CDD7DE;
+                border:none;
+
+                width:5rem;
+                height:2rem;
+
+                
+                font-family: 'Nanum Gothic', sans-serif;
+                color :#202020;
+
+            }
+
+            #submit:hover{
+                background-color:#AED6F6;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="register">
+            <form method="post">
+                <h1>회원 가입</h1>
+                <p>
+                    이름 <br></bt><input type="text" name="name"><br>
+                </p>
+                <p>
+                    아이디<br><input type="text" name="id"><br>
+                </p>
+                <p>
+                    학번<br><input type="text" name="student num"><br>
+                </p>
+                <p>
+                    비밀번호<br><input type="text" name="id"><br>
+                </p>
+                <p>
+                    비밀번호 확인<br><input type="password" name="password"><br>
+                </p>
+
+                <p>
+                    <input id='submit' type="submit" value = "제출" onclink="location.href='메인페이지.html'"><br>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
