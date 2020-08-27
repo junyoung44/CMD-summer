@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+        <title>컴퓨터교육과</title>
+        <meta charset="utf-8">  
+        <style>
+            body{
+                margin : 2%;
+                background-color: azure;
+
+                font-family: 'Nanum Gothic', sans-serif;
+                color :#202020;
+            }
+
+            #wrap{
+                border-radius :20px;
+                border : 3rem solid #CDD7DE;
+                padding-bottom : 2rem;
+
+                background-color:#AED6F6;
+            }
+
+            #title{
+                margin-top: 2rem;
+                margin-bottom : 2rem;
+
+                font-size: 3rem;
+                text-align: center;
+            }
+            .btn{
+                display : block;
+                height:1.5rem;
+                width:4.5rem;
+                border : 0.1rem solid #CDD7DE;
+                border-radius:10px;
+                background-color: azure;
+                box-shadow: 0 9px #999;
+
+
+                margin:0 auto;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size:1rem;
+                color:#202020;
+                }
+
+            .btn:hover{
+
+                background-color: #CDD7DE;
+                box-shadow: 0.5px #666;
+                transform: translateY(4px);
+            }    
+
+            #notepad{
+                width: 50%;
+                margin:0 auto;
+            }
+            
+
+        </style>
+    </head>
+
+<body>
+    <div id='wrap'>
+        <div id='title'>
+            재학생 게시판
+        </div>
+        <div id='notepad'>
+            <form action="/write_student" method="post">
+                <p><input type="text" name="title" placeholder="제목" style="width : 100%; border : 5px solid #CDD7DE;
+                    border-radius : 5px;"></p>
+                <p>
+                  <textarea name="description" placeholder="내용" style="width : 100%; height: 10rem; border : 5px solid #CDD7DE;
+                  border-radius : 5px;"></textarea>
+                </p>
+                <p>
+                    <button class="btn" type="submit" formaction="/write_student">글쓰기</button>
+                </p>
+              </form>
+        </div>
+        
+
+    </div>
+</body>
+
+</html>

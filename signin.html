@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+        
+        <title>로그인</title>
+        <meta charset="utf-8">  
+        <style>
+            body{
+                margin : 2%;
+                background-color: #AED6F6;
+                
+                font-family: 'Nanum Gothic', sans-serif;
+                color :#202020;
+            }
+            #login {
+                background-color :azure;
+                margin-top:6rem;
+                margin:0 auto;
+                border: 1rem solid #CDD7DE;
+                padding : 2rem;
+                width : 20rem;
+                text-align: left;
+                margin-top:3rem;
+
+
+            }
+            #submit{
+                background-color:#CDD7DE;
+                border:none;
+
+                width:5rem;
+                height:2rem;
+
+                
+                font-family: 'Nanum Gothic', sans-serif;
+                color :#202020;
+
+            }
+
+            #submit:hover{
+                background-color:#AED6F6;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <div id="login">
+            <form method="post">
+                <h1>로그인</h1><br>
+                <p id="id">
+                    아이디<br><br><input type="text" name="id">
+                </p>
+                <p id="password">
+                    비밀번호<br><br><input type="password" name="password">
+                </p>
+                <br>
+                <p>
+                    <input id='submit' type="submit" value = "로그인" onclink="location.href='메인페이지.html'">
+                </p>
+                <p style="font-size: 0.6rem;">
+                    아직 회원이 아니신가요? <a href='signup.html'>회원 가입</a>
+                </p>
+            </form>
+        </div>
+    </body>
+
+</html>

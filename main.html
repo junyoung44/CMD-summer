@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@800&display=swap" rel="stylesheet">
+        <meta charset="utf-8">  
+        <style>
+            body{
+                margin : 2%;
+                background-color:#AED6F6;   
+             
+                font-family: 'Nanum Gothic', sans-serif;
+                color :#202020;
+            }
+            #wrap{
+                width:80%;
+                background-color: azure;
+                margin:0 auto;
+                margin-top:10%;
+                padding : 2rem;
+            }
+            
+            .menu{
+                display:inline-block;
+                width:49%;
+            }
+
+            .banner {
+                background-image: url("com.png");
+                background-repeat : no-repeat;
+                background-position: center top;
+                background-size : 15rem;
+
+                margin:0 auto;
+                height :15rem;
+                
+
+                color :azure;
+                text-align :center;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size : 4rem;
+                
+            }
+
+            .btn{
+                display: block;
+                height:3rem;
+                width: 8rem;
+                border : 0.1rem solid #CDD7DE;
+                border-radius:10px;
+                background-color: azure;
+                box-shadow: 0 9px #999;
+
+
+                margin:0 auto;
+                font-family: 'Nanum Gothic', sans-serif;
+                font-size:1.5rem;
+                color:#202020;
+                }
+
+            .btn:hover{
+
+                background-color: #CDD7DE;
+                box-shadow: 0.5px #666;
+                transform: translateY(4px);
+            }
+            
+
+        </style>
+
+    </head>
+    <body>
+        <div id="wrap">
+
+            <span class='menu'>
+                <div class="banner">
+                    <h1 style="padding-top: 3rem; margin-bottom:0.5rem; font-size: 1.5rem;">재학생 게시판 </h1>
+                </div>
+                <div>
+                    <button class="btn" onclick="location.href='student.html'"><<</button>
+                </div>
+            </span>
+       
+            <span class='menu'>
+                <div class="banner">
+                    <h1 style="padding-top: 3rem; margin-bottom:0.5rem; font-size: 1.5rem;">졸업생 게시판 </h1>
+                </div>
+                <div>
+                    <button class="btn" onclick="location.href='graduate.html'">>></button>
+                </div>
+            </span>
+       
+       </div>
+        
+    </body>
+
+</html>
